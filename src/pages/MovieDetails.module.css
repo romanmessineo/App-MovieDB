@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  margin: auto;
+}
+
+.col {
+  max-width: 400px;
+  margin: 15px;
+  height: auto;
+  height: 80%;
+}
+
+.movieImage {
+  border-radius: 15px;
+}
+
+.movieDetails {
+  font-size: 1.5rem;
+  text-align: center;
+}

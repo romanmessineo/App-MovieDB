@@ -1,0 +1,23 @@
+.movieCard {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all;
+}
+
+.movieCard:hover {
+  opacity: 0.8;
+}
+
+.movieImage {
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+@media (max-width: 450) {
+  .movieImage {
+    width: 90%;
+    height: auto;
+  }
+}
