@@ -9,7 +9,7 @@ export default function Search() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  console.log("esto esta reciviendo:" + search)
+  /* console.log("esto esta reciviendo:" + query) */
 
   return (
     <form className={styles.searchContainer} onSubmit={handleSubmit}>
