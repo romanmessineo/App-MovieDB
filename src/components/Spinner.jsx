@@ -3,7 +3,7 @@ import styles from "./Spinner.module.css"
 
 
 
-export default function Spinner() {
+export function Spinner() {
   return (
     <div className={styles.spinner}>
         <ImSpinner9 className={styles.spinning} size={60} />

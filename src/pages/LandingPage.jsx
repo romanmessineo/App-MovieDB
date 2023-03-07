@@ -1,9 +1,16 @@
 import { MoviesGrid } from "../components/MoviesGrid";
-import Search from "../components/Search";
+import { Search } from "../components/Search";
+import { useSearchParams } from "react-router-dom";
+import { useDebounce } from "../hooks/useDebounce";
 
 export function LandingPage(){
-    return <div>
-         <Search/> 
-        <MoviesGrid/>
-    </div>;
+    const [query] = useSearchParams();
+    const search = query.get("search");
+  
+    const debouncedSearch = useDebounce(search, 300);
+
+    return (<div>
+         <Search />
+      <MoviesGrid key={debouncedSearch} search={debouncedSearch} />
+    </div>);
 }
